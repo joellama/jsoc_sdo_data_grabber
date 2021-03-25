@@ -28,11 +28,11 @@ def main():
     parser.add_argument('-o', '--out-dir', type=str, default='./',
                         help='Directory to save the downloaded data')
     parser.add_argument('-v', '--verbose', help='Verbose output', action="store_true")
-    parser.add_argument('-p', '--parallel', help='Verbose output', action="store_true")
-    parser.add_argument('-n', '--ndownloads', type=int, default=5,
-                        help="Number of simultaneous downloads if using parallel")
+    parser.add_argument('-p', '--parallel', help='Downlaod files in parallel', action="store_true")
+
     # Arguments that can override the defaults
-    
+    parser.add_argument('--ndownloads', type=int, default=5,
+                        help="Number of simultaneous downloads if using parallel")
     parser.add_argument('--jsoc-url', type=str, default="http://jsoc.stanford.edu",
                         help=f"URL for the JSOC website (Default: http://jsoc.stanford.edu).")
     parser.add_argument('--fetch-url', type=str, default="/cgi-bin/ajax/jsoc_fetch",
