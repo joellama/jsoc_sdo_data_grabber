@@ -9,7 +9,6 @@ from datetime import datetime
 import pandas as pd
 import os 
 import wget
-import argparse
 
 def print_message(msg):
     print(datetime.now().strftime(f"[%Y-%m-%d %H:%M:%S] {msg}"))
