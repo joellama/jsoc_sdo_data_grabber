@@ -1,4 +1,4 @@
-# jsoc_sdo_data_grabber
+# Python interface to the JSOC CGI data grabber
  Python script to grab data from JSOC. The code is written in `Python 3`.   
  
  Required packages: 
