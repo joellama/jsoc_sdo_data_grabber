@@ -1,5 +1,5 @@
-# jsoc_sdo_data_grabber
- Python script to grab data from JSOC. The code is written in `Python 3`. See `requirements.txt` for a list of required packages that should be installed. 
+# Python interface to the JSOC CGI data grabber
+ Python script to grab data from JSOC. The code is written in `Python 3`.   
  
  Required packages: 
  ```
@@ -8,7 +8,7 @@
  pip install tqdm
  pip install pqdm
  ```
- The help documentation can be accessed with ```python jsoc_sdo_data_grabber.py -h```: 
+ The help documentation can be accessed with ```python jsoc_downloader.py -h```: 
  ```
  usage: Script to download data from JSOC [-h] [-s SERIES] [-e EMAIL] [-o OUT_DIR] [-v] [-p] [-n NDOWNLOADS] [--jsoc-url JSOC_URL]
                                          [--fetch-url FETCH_URL] [--protocol PROTOCOL] [--method METHOD] [--sleep-time SLEEP_TIME]
@@ -32,4 +32,4 @@ optional arguments:
   --sleep-time SLEEP_TIME
                         Time in s to sleep between checks on export request
 ```
-An example call would be, ```python jsoc_sdo_data_grabber.py -s hmi.ic_720s[$] -e test@test.com```.
+An example call would be, ```python jsoc_downloader.py -s hmi.ic_720s[$] -e test@test.com```.
